@@ -12,7 +12,7 @@ func ShutDown(w http.ResponseWriter, r *http.Request) {
 	if err == nil {
 		fmt.Println("host " + host + " port " + port)
 		// Only allow from LocalHost
-		if host == "::1" {
+		if host == "::1" || host == "127.0.0.1" {
 			os.Exit(0)
 		}
 	}
