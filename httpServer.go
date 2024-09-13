@@ -13,6 +13,7 @@ func main() {
 
 	http.HandleFunc("/print", h.PrintOut)
 	http.HandleFunc("/write", h.WriteOut)
+	http.HandleFunc("/stop", h.ShutDown)
 
 	log.Println("Listening...")
 	http.ListenAndServe(":8888", nil)

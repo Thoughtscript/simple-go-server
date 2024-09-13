@@ -17,3 +17,5 @@ bash run.sh
 3. [http://localhost:8888/public/](http://localhost:8888/public/)
     * Also: [http://localhost:8888/public/index.html](http://localhost:8888/public/index.html)
     * Simple HTML Static File Serve
+4. [http://localhost:8888/stop](http://localhost:8888/stop)
+    * Immediate terminate the application
